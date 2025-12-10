@@ -12,7 +12,7 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 
-model = joblib.load('model.joblib')
+model = joblib.load('linear_regression_model.pkl')
 app = FastAPI()
 
 class Item(BaseModel):
